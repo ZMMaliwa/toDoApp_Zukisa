@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Titillium+Web&display=swap');
+
+.strike {
+ text-decoration: line-through red solid;
+  color: green;
+}
+.checkboxElem {
+  background-color: green;
+  color: white;
+}
+td{
+  border:  1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px;
+}
+
+.todo-input{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  
+}
+
+.todoTable-block{
+  margin-top: 1rem;
+}
+
+.pagination-pages{
+  text-align: right;
+}
+
+.pagination-pages > * {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.material-icons{
+  cursor: pointer;
+}
+
+::-ms-input-placeholder{
+  color: green;
+ 
+}
+
+
+
+::placeholder{
+  color: green;
+ 
+}
+
+input {
+  color: green;
+  border-radius: 30px;
+  padding-left: 1rem;
+}
+
+h1 {
+  font-size: xx-large;
+  text-decoration: dashed;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+
+body{
+  background: linear-gradient( to right, #000428, #024783);
+  font-family: 'Titillium Web', sans-serif;
+  color: greenyellow;
+}
+
+.todo-input{
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 767px) {
+  /* for mobile or small screen device */
+  #todoTable, .todo-calendar{
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* for tablets or laptops or desktops */
+  .todo-grid-parent{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 1rem;
+  }
+
+  #calendar{
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    
+  }
+}
+
+.todo-overlay{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100vw);
+  transition: transform 250ms;
+  z-index: 2;
+}
+
+.todo-modal{
+  min-width: 50vw;
+  height: 50vh;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+   
+}
+
+.todo-modal-close-btn{
+  background-color: red;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+
+.slidedIntoView {
+  transform: translateX(0);
+  transition: transform 650ms;
+}
+
+#todoTable tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+button{
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: greenyellow;
+}
+
+button:active{
+  border: 1px inset rgba(255, 255, 255, 0.1);
+}
+
+button:hover{
+  background-color: green;
+}
+
+.chevron{
+  transform: translateY(0.4rem);
+}
+
+.itemsPerPage{
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
